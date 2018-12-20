@@ -1,0 +1,322 @@
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+body {
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    fill: white;
+    color: white;	
+    cursor:default;
+    font-weight: 300;
+    padding-bottom: 100px;
+    background-color: #414e60;
+     background-image: url(../images/bg-pattern.svg),radial-gradient(farthest-side ellipse at 10% 0, #414e60 20%, #94a3b1); 
+    background-image: url(../images/bg-pattern.svg),-webkit-radial-gradient(10% 0, farthest-side ellipse, #414e60 20%, #94a3b1);
+    background-image: url(../images/bg-pattern.svg),-moz-radial-gradient(10% 0, farthest-side ellipse, #414e60 20%, #94a3b1);
+    background-size: cover;
+    background-attachment: fixed, fixed;
+}
+
+.header{
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10vw;
+    padding-bottom: 20px;
+    background-color:rgba(255,255,255,0.1);
+    box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+.logo{width: 10vw;}
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.btn.focus, .btn:focus, .btn:hover {
+ 
+    text-decoration: none;
+}
+
+ /*-----------------------Time bar -------------------------*/
+html { overflow: -moz-scrollbars-none !important; }
+.time-number-item{width:24px} 
+.scrolling{display: inline-block; float: right;margin-top: -20px; margin-right: 40px; font-size: 18px; }
+.time-bar-icon {display: inline-block; float: right;margin-top: 30px; margin-right: 40px; font-size: 18px; }
+.scrolling:hover, .time-bar-icon:hover{ cursor:pointer; color: #177BAD}
+
+.dtg-top-bar,.dtg-time-bar{
+    float:left; 
+    display: inline-block;  
+    flex-wrap:wrap;
+    overflow-y: scroll;  
+    white-space: nowrap;
+    display: flex;  
+    margin-top: 10px;
+ 
+}
+.dtg-time-bar,.dtg-time-bar-full{width:71vw;}
+.dtg-top-bar{ height: 25px;}
+.dtg-time-bar{height: 75px;}
+.dtg-time-bar-full{height: 140px;}
+.dtg-top-bar-full {height: 170px;}
+.small-time-bar{height:40px;}
+.data-selection{overflow: hidden;}
+.time-section{padding-top: 60px;}
+::-webkit-scrollbar {
+    width: 0;   
+    background: transparent;   
+}
+::-webkit-scrollbar-thumb {
+    background:rgba(255,255,255);
+}
+
+.dtg-top-bar >div:hover, .dtg-time-bar >div:hover{background-color: #177BAD}
+.dtg-top-bar >div{  border: 1px solid #eeeeee; padding:2px; margin: 2px; width:118px;}
+.dtg-time-bar >div { border: 1px solid #eeeeee; border-radius: 2px; padding:2px; margin: 2px; box-shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.1);}
+.latest-item{width:118px;}
+.section-right{ width: 77%; float: right; padding: 20px; background-color:rgba(255,255,255,0.1);margin: 10px;}
+.dtg-top-item{ border: 1px solid #eeeeee; padding:2px; margin: 2px; display: inline-block}
+.error-msg{float: left; color:#ECA345; margin-left: 10px;}
+.item-seleted{background-color: #5cb85c;}
+.time-display-select-bar{ display:block; clear:both; text-align: right; margin-bottom: 10px; margin-right: 55px;}
+.time-display-select-bar div{display:inline-block;margin-right: 40px;}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+ /*-----------------------Time bar end -------------------------*/
+
+ 
+/*------------------------- Left nav bar ----------------------------------*/
+.side-menu .navbar-nav .selected{
+     background-color:rgba(255,255,255,0.1);
+}
+.side-menu .navbar-nav{
+     background-color:rgba(255,255,255,0.1);
+}
+.side-menu {
+  width: 20%;
+  height: 100%;
+  background-color: transparent;
+  float:left;
+  margin-top: 10px;
+}
+.side-menu .navbar {
+  border: none;
+ 
+}
+.side-menu .navbar-default{
+    background-color: transparent;
+}
+.side-menu  .navbar-default .navbar-nav>li>a{color: #ffffff}
+.side-menu .navbar-header {
+  width: 100%;
+  border-bottom: 1px solid #666666;
+}
+.side-menu .navbar-nav .active a {
+  background-color: transparent;
+  margin-right: -1px;
+  border-right: 5px solid #e7e7e7;
+}
+.side-menu .navbar-nav li {    
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #666666;
+}
+.side-menu .navbar-nav li a {
+  padding: 15px;
+}
+.side-menu .navbar-nav li a .glyphicon {
+  padding-right: 10px;
+}
+.side-menu .navbar-nav li a:hover{
+   background-color:rgba(255,255,255,0.1);
+}
+.gi-x{font-size: 1.5em;}
+.gi-2x{font-size: 2em;}
+.gi-3x{font-size: 3em;}
+.gi-4x{font-size: 4em;}
+.gi-5x{font-size: 5em;}
+
+/*-----------------------Slider -------------------------*/
+.slidecontainer { width: 100%;}
+.slider{
+    width: 100%; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.silder-text {font-size: 24px; margin-top: 10px; }
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;    
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;    
+    /*required for proper track sizing in FF*/
+    width: 100%
+}
+/*===========================Chrome==========================*/
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: goldenrod;
+    margin-top: -4px;
+    cursor: pointer;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+/*===========================FIREFOX==========================*/
+input[type=range]::-moz-range-track {
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: goldenrod;
+    cursor: pointer;
+}
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+/*===========================IE 10+==========================*/
+input[type=range]::-ms-track {
+    height: 5px;   
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;  
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: goldenrod;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+ /*-----------------------Slider end-------------------------*/
+ 
+ /*-----------------------@media query  over write-------------------------*/
+@media only screen  and (min-device-width: 1024px) and (max-device-width : 1366px) {
+/* Styles */
+.time-bar-icon {
+    margin-top: 40px;
+    margin-right: 0; 
+}
+  .logo{width: 15vw;}
+  .header {padding-left:2vw;} 
+.scrolling { margin-right: 0; }
+.time-display-select-bar{margin-right: 20px;}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+/* Styles */
+.time-bar-icon {
+    margin-top: -35px;
+    margin-right: 0; 
+}
+  .logo{width: 25vw;}
+  .header {padding-left:2vw;} 
+.scrolling { margin-right: 0; }
+.time-display-select-bar{margin-right: 0;}
+}
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+  .logo{width: 30vw;}
+  .header {padding-left:2vw;} 
+  .side-menu .navbar{
+    position: absolute;
+    width: 60%; /* 6 columns */
+    display: none;
+  }
+  .section-right{
+      width:100% ;
+      margin:1px;
+      padding: 5px;
+  }
+  .scrolling{display:none}
+  .time-bar-icon{display:none}
+  .dtg-time-bar{ width: 100vw;}
+
+ 
+  .active .navbar {
+    display: block;  
+    right: 0;
+    top: 0;
+    z-index: 1;
+   
+  }
+.active .navbar-nav{
+     background-color:#414e60;
+}
+.time-display-select-bar{margin-right: 0;}
+
+}
+ /*-----------------------@media query  over write end-------------------------*/
